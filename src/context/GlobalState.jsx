@@ -31,7 +31,7 @@ export const GlobalProvider = ({ children }) => {
     let currentUserStatsQueryArray;
 
     const currentUserStatsQuery = async function (emailAddress) {
-      const uRL = `http://localhost:5000/api/v1/spamStatsPerUserStats/user/${emailAddress}`;
+      const uRL = `https://mailstats-api.onrender.com/api/v1/spamStatsPerUserStats/user/${emailAddress}`;
 
       currentUserStatsQueryArray = await axios.get(uRL);
 

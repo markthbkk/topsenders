@@ -57,7 +57,7 @@ const Home = () => {
   };
 
   const allUsersQuery = async function () {
-    const uRL = "http://localhost:5000/api/v1/spamStatsSenders";
+    const uRL = "https://mailstats-api.onrender.com/api/v1/spamStatsSenders";
 
     const allUsersQueryResult = await axios.get(uRL);
 
